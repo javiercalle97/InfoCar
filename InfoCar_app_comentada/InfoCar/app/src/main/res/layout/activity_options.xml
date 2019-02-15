@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sdg.infocar.OptionsActivity">
+
+    <TextView
+        android:id="@+id/options_header_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Options"
+        android:textColor="@color/colorBlack"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/options_header_tv"/>
+
+    <TextView
+        android:id="@+id/sound_option_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:text="Activate sound alarm"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line1"/>
+
+    <TextView
+        android:id="@+id/vibrate_option_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:text="Activate vibration alarm"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sound_option_tv"/>
+
+    <TextView
+        android:id="@+id/write_option_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:text="Write RAW data in the Raspberry"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vibrate_option_tv"/>
+
+    <ToggleButton
+        android:id="@+id/sound_option_bt"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@id/sound_option_tv"
+        app:layout_constraintBottom_toBottomOf="@id/sound_option_tv"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ToggleButton
+        android:id="@+id/vibrate_option_bt"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@id/vibrate_option_tv"
+        app:layout_constraintBottom_toBottomOf="@id/vibrate_option_tv"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ToggleButton
+        android:id="@+id/write_option_bt"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        app:layout_constraintTop_toTopOf="@id/write_option_tv"
+        app:layout_constraintBottom_toBottomOf="@id/write_option_tv"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Authors:\nJavier Calle\nVicente Bartual"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
